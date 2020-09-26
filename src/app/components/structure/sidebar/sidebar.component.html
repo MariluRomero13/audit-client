@@ -9,20 +9,8 @@
   <div *ngIf="isMobileMenu()">
     <ul class="nav navbar-nav nav-mobile-menu">
       <li routerLinkActive="active" class="item nav-item">
-        <a class="nav-link" [routerLink]="['/panel/perfil']">
-          <mat-icon svgIcon="account" matListIcon class="icon-style"></mat-icon>
-          <p>Perfil</p>
-        </a>
-      </li>
-      <li routerLinkActive="active" class="item nav-item">
-        <a class="nav-link" [routerLink]="['/panel/notificaciones']">
-          <mat-icon svgIcon="bell" matListIcon class="icon-style"></mat-icon>
-          <p>Notificaciones</p>
-        </a>
-      </li>
-      <li routerLinkActive="active" class="item nav-item">
         <a class="nav-link" (click)="logout()">
-          <mat-icon svgIcon="logout" matListIcon class="icon-style"></mat-icon>
+          <mat-icon matListIcon class="icon-style">exit_to_app</mat-icon>
           <p>Salir</p>
         </a>
       </li>
@@ -32,7 +20,7 @@
   <ul class="nav">
     <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="item nav-item">
       <a class="nav-link" [routerLink]="[menuItem.path]">
-        <mat-icon svgIcon="{{ menuItem.icon }}" matListIcon class="icon-style"></mat-icon>
+        <mat-icon  matListIcon class="icon-style">{{ menuItem.icon }}</mat-icon>
         <p>{{ menuItem.title }}</p>
       </a>
     </li>

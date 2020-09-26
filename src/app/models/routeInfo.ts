@@ -6,9 +6,9 @@ export interface RouteInfo {
 }
 
 export const appRoutes: RouteInfo[] = [
-  { path: '/panel/dashboard', title: 'Dashboard', icon: 'view-dashboard' },
-  { path: '/panel/roles', title: 'Roles', icon: 'account-supervisor-circle' },
-  { path: '/panel/users', title: 'Usuarios', icon: 'account-tie' },
-  { path: '/panel/companies', title: 'Compañias', icon: 'account-tie' }
+  { path: '/panel/dashboard', title: 'Dashboard', icon: 'dashboard' },
+  { path: '/panel/roles', title: 'Roles', icon: 'supervised_user_circle' },
+  { path: '/panel/users', title: 'Usuarios', icon: 'group' },
+  { path: '/panel/companies', title: 'Compañias', icon: 'domain' }
 ];
 
