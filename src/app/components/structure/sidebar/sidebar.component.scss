@@ -1,0 +1,47 @@
+.nav-link {
+  cursor: pointer;
+}
+
+.logo .logo-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center !important;
+  width: 100% !important;
+  max-height: 40% !important;
+}
+
+.logo .logo-img img {
+  top: 16px;
+  height: 55px;
+  width: 55px;
+  position: inherit !important;
+}
+
+.logo {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.icon-style {
+  float: left;
+  margin-right: 8%;
+  color: black;
+  cursor: pointer;
+}
+
+.item {
+  color: black;
+}
+
+::ng-deep .sidebar .nav li.active > a, .sidebar .nav li.active > a mat-icon {
+  color: #fff !important;
+  background-color: #A61D39 !important;
+  .icon-style {
+    color: #fff !important;
+  }
+}
+
+.nav-mobile-menu > li:first-child {
+  margin-top: 10px;
+}
