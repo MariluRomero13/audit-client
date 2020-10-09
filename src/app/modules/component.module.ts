@@ -7,6 +7,7 @@ import { ShareModule } from './share.module';
 import { PageNotFoundComponent } from '../components/structure/page-not-found/page-not-found.component';
 import { DashboardComponent } from '../components/dashboard/dashboard.component';
 
+
 @NgModule({
   declarations: [
     NavbarComponent,
