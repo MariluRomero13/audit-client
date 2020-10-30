@@ -15,11 +15,19 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
-
-
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 const materialComponents = [
   MatIconModule,
+  MatListModule,
+  MatDividerModule,
+  MatToolbarModule,
+  MatSidenavModule,
   MatMenuModule,
   MatFormFieldModule,
   MatInputModule,
@@ -35,6 +43,8 @@ const materialComponents = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatMomentDateModule,
+  MatExpansionModule,
+  MatButtonModule
 ];
 
 @NgModule({

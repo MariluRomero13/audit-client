@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { MaterialSvgService } from './services/apis/material-svg.service';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { iconsName } from './exports/icons';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,12 @@ import { MaterialSvgService } from './services/apis/material-svg.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private materialSvg: MaterialSvgService) {
-    this.materialSvg.init();
+  constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer) {
+    this.getIcons();  }
+
+  private getIcons() {
+    this.matIconRegistry.addSvgIconSet(
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/mdi.svg')
+    );
   }
 }

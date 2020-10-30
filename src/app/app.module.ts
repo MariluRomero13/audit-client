@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentModule } from './modules/component.module';
 import { ShareModule } from './modules/share.module';
 import { JwtInterceptorService } from './services/auth/jwt-interceptor.service';
-
+import { DatePipe } from '@angular/common';
+import { CookieService } from 'ngx-cookie-service';
 @NgModule({
   declarations: [
     AppComponent
@@ -29,6 +30,8 @@ import { JwtInterceptorService } from './services/auth/jwt-interceptor.service';
     BrowserAnimationsModule
   ],
   providers: [
+    CookieService,
+    DatePipe,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: JwtInterceptorService,

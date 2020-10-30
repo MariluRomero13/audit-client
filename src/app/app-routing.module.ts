@@ -6,7 +6,8 @@ import { dashboardRoutes } from './components/structure/dashboard.routes';
 
 const appRoutes: Routes = [
   // { path: 'panel', redirectTo: '/panel/dashboard', pathMatch: 'full' },
-  { path: '', redirectTo: '/panel', pathMatch: 'full' },
+  { path: '', redirectTo: '/panel/dashboard', pathMatch: 'full' },
+  { path: 'panel', redirectTo: '/panel/dashboard', pathMatch: 'full' },
   { path: 'panel', component: AdminLayoutComponent, children: dashboardRoutes},
   { path: '**', component: PageNotFoundComponent }
 ];
